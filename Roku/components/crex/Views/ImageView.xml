@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ImageView" extends="BaseCrexView" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+  <children>
+    <Rectangle id="rImage" color="0x121212FF" />
+    <Poster id="pBackgroundImage" loadDisplayMode="scaleToFit" />
+  </children>
+
+  <interface>
+    <field id="data" type="string" onChange="onDataChange" />
+  </interface>
+
+  <script type="text/brightscript" uri="ImageView.brs" />
+  <script type="text/brightscript" uri="../Libs/Utilities.brs" />
+</component>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="PosterListView" extends="BaseCrexView" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+  <children>
+    <Rectangle id="pBackgroundRect" color="0x323232FF" />
+    <Poster id="pBackgroundImage" opacity="0.25" loadDisplayMode="scaleToFit" />
+    <Label id="lTitle" horizAlign="center" font="font:LargeBoldSystemFont" />
+    <Poster id="pItemImage" loadDisplayMode="scaleToFit" />
+    <Label id="lItemDetailLeft" font="font:SmallestSystemFont" />
+    <Label id="lItemDetailRight" horizAlign="right" font="font:SmallestSystemFont" />
+    <Label id="lItemDescription" wrap="true" font="font:SmallestSystemFont" lineSpacing="6" />
+
+    <!-- Roughtly 25 pixels left edge and right edge -->
+    <LabelList id="llMenu" numRows="10">
+      <ContentNode id="cnMenuContent" role="content" />
+    </LabelList>
+  </children>
+
+  <interface>
+    <field id="data" type="string" onChange="onDataChange" />
+  </interface>
+
+  <script type="text/brightscript" uri="PosterListView.brs" />
+  <script type="text/brightscript" uri="../Libs/Utilities.brs" />
+</component>

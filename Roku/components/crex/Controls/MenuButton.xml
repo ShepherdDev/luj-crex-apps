@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="MenuButton" extends="Group" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+  <children>
+    <Rectangle id="rBackground" />
+    <Label id="lblText" horizAlign="center" vertAlign="center" width="0" />
+  </children>
+
+  <interface>
+    <field id="height" type="integer" value="64" onChange="onSizeChange" />
+    <field id="width" type="integer" value="0" onChange="onSizeChange" />
+    <field id="text" type="string" onChange="onSizeChange" />
+    <field id="boundingWidth" type="integer" />
+  </interface>
+
+  <script type="text/brightscript" uri="MenuButton.brs" />
+  <script type="text/brightscript" uri="../Libs/Utilities.brs" />
+</component>

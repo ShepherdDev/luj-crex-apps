@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="VideoView" extends="BaseCrexView" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+  <children>
+    <Rectangle id="rBackground" color="0x121212FF" />
+    <Group id="gResume" visible="false">
+      <!-- Roughtly 25 pixels left edge and right edge -->
+      <LabelList id="llResume" numRows="2">
+        <ContentNode role="content">
+          <ContentNode title="Resume" />
+          <ContentNode title="Play From Beginning" />
+        </ContentNode>
+      </LabelList>
+    </Group>
+    <Video id="vVideo" visible="false" />
+  </children>
+
+  <interface>
+    <field id="data" type="string" onChange="onDataChange" />
+  </interface>
+
+  <script type="text/brightscript" uri="VideoView.brs" />
+  <script type="text/brightscript" uri="../Libs/Utilities.brs" />
+</component>

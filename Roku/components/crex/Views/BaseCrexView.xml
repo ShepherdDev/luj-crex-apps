@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="BaseCrexView" extends="Group" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+  <children />
+
+  <interface>
+    <field id="crexScene" type="node" />
+    <field id="templateState" type="string" />
+    <function name="willShowView" />
+  </interface>
+
+  <script type="text/brightscript" uri="BaseCrexView.brs" />
+</component>

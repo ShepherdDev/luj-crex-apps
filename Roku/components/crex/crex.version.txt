@@ -1,0 +1,4 @@
+Crex Version 1.1.0
+
+This file must exist at the root crex directory. This is usually
+the ~/components/crex directory.

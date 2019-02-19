@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Notification" extends="Group" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+  <children>
+    <Rectangle id="rBackground">
+      <Poster id="pImage" loadDisplayMode="scaleToFit" />
+      <Label id="lMessage" color="0xddddddff" wrap="true" horizAlign="center" vertAlign="center" />
+      <MenuButton id="bDismiss" text="Dismiss" />
+    </Rectangle>
+
+    <Animation id="aSlide" duration="0.25" repeat="false" easeFunction="linear">
+      <Vector2DFieldInterpolator id="aSlideValue" key="[0.0, 1.0]" fieldToInterp="rBackground.translation" />
+      <FloatFieldInterpolator id="aSlideFadeValue" key="[0.0, 1.0]" keyValue="[0, 1]" fieldToInterp="rBackground.opacity" />
+    </Animation>
+  </children>
+
+  <interface>
+    <field id="text" type="string" onChange="onTextChange" />
+    <field id="imageUri" type="string" onChange="onImageUriChange" />
+    <field id="notification" type="assocarray" onChange="onNotificationChange" />
+
+    <field id="state" type="string" alwaysNotify="true" />
+  </interface>
+
+  <script type="text/brightscript" uri="Notification.brs" />
+  <script type="text/brightscript" uri="../Libs/Utilities.brs" />
+</component>

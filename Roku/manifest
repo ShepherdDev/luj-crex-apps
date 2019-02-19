@@ -1,0 +1,21 @@
+title=Sample.Roku
+major_version=1
+minor_version=0
+build_version=1
+
+# Channel Icons
+mm_icon_focus_sd=pkg:/images/App-Icon-SD-214x144.png
+mm_icon_focus_hd=pkg:/images/App-Icon-HD-290x218.png
+mm_icon_focus_fhd=pkg:/images/App-Icon-FHD-540x405.png
+
+# Splash Screen
+splash_screen_sd=pkg:/images/Splash-480p.jpg
+splash_screen_hd=pkg:/images/Splash-720p.jpg
+splash_screen_fhd=pkg:/images/Splash-1080p.jpg
+splash_color=#121212
+splash_min_time=0
+
+ui_resolutions=hd,fhd
+uri_resolution_autosub=$$RES$$,480p,720p,1080p
+
+app_config=pkg:/source/config.json
