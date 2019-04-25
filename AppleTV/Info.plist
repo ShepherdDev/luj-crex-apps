@@ -7,11 +7,11 @@
 	<key>CFBundleName</key>
 	<string>Lift Up Jesus</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.liftupjesus.AppleTV</string>
+	<string>com.shepherdchurch.LUJApp</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>6</string>
 	<key>MinimumOSVersion</key>
 	<string>12.0</string>
 	<key>UIDeviceFamily</key>
